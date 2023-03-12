@@ -23,7 +23,7 @@ class RecentAdapter(private val context: Context, private var his: ArrayList<His
     }
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder?.bind(his[position])
+        holder.bind(his[position])
 
         holder.itemView.setOnClickListener {
             val intent= Intent( context,MainActivity::class.java)
